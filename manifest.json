@@ -1,13 +1,14 @@
 {
+  "manifest_version": 1,
   "name": "Fortune Table",
   "version": "1.0.0",
   "description": "Three mini-games for your tabletop: Wheel of Fortune, Slot Machine, and Coin Flip. Synchronized for all players!",
   "author": "Fortune Table Dev",
-  "icon": "/assets/icon.svg",
+  "icon": "assets/icon.svg",
   "action": {
     "title": "Fortune Table",
-    "icon": "/assets/icon.svg",
-    "popover": "/index.html",
+    "icon": "assets/icon.svg",
+    "popover": "index.html",
     "height": 620,
     "width": 450
   }
