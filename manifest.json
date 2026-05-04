@@ -4,10 +4,12 @@
   "version": "1.0.0",
   "description": "Mesa da Fortuna com Roleta, Caça-níquel e Cara ou Coroa.",
   "author": "Nathan Fugisse",
-  "icon": "https://Nathan-Fugisse.github.io/fortune-table/icons/icon.svg",
+  "icon": "/icons/icon.svg",
   "action": {
     "title": "Fortune Table",
-    "icon": "https://Nathan-Fugisse.github.io/fortune-table/icons/icon.svg",
-    "popover": "https://Nathan-Fugisse.github.io/fortune-table/index.html"
+    "icon": "/icons/icon.svg",
+    "popover": "/index.html",
+    "width": 400,
+    "height": 620
   }
 }
