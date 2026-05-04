@@ -8,10 +8,6 @@
   "action": {
     "title": "Fortune Table",
     "icon": "https://Nathan-Fugisse.github.io/fortune-table/icons/icon.svg",
-    "popover": {
-      "url": "https://Nathan-Fugisse.github.io/fortune-table/index.html",
-      "height": 620,
-      "width": 400
-    }
+    "popover": "https://Nathan-Fugisse.github.io/fortune-table/index.html"
   }
 }
