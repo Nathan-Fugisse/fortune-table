@@ -8,121 +8,89 @@
 </head>
 <body>
 
-  <!-- TELA DE CARREGAMENTO -->
   <div id="loading-screen">
     <div class="loader-spinner"></div>
     <p>Conectando à sala...</p>
   </div>
 
-  <!-- CONTEÚDO PRINCIPAL -->
   <div id="app" class="hidden">
 
-    <!-- CABEÇALHO -->
     <header id="header">
       <h1>🎰 Fortune Table</h1>
       <div id="header-controls">
-        <button id="btn-toggle-sound" title="Ligar/Desligar som">🔊</button>
-        <button id="btn-toggle-anim" title="Ligar/Desligar animações">✨</button>
+        <button id="btn-toggle-sound" title="Som">🔊</button>
+        <button id="btn-toggle-anim" title="Animações">✨</button>
       </div>
     </header>
 
-    <!-- ABAS -->
     <nav id="tabs">
       <button class="tab-btn active" data-tab="roulette">🎡 Roleta</button>
-      <button class="tab-btn" data-tab="slots">🎰 Caça-níquel</button>
+      <button class="tab-btn" data-tab="slots">🎰 Slots</button>
       <button class="tab-btn" data-tab="coinflip">🪙 Moeda</button>
     </nav>
 
-    <!-- ABA: ROLETA -->
     <section id="tab-roulette" class="tab-content active">
-
       <div id="roulette-container">
         <div id="roulette-pointer">▼</div>
         <canvas id="roulette-canvas" width="300" height="300"></canvas>
       </div>
-
-      <div id="roulette-result" class="result-box">Gire a roleta para começar!</div>
-
-      <button id="btn-spin-roulette" class="btn-primary">🎡 Girar Roleta</button>
-
+      <div id="roulette-result" class="result-box">Gire a roleta!</div>
+      <button id="btn-spin-roulette" class="btn-primary">🎡 Girar</button>
       <div id="roulette-gm-panel" class="gm-panel hidden">
-        <h3>⚙️ Configurações do GM</h3>
-        <label for="roulette-items-input">Opções (uma por linha):</label>
+        <h3>⚙️ GM — Opções da Roleta</h3>
+        <label>Opções (uma por linha):</label>
         <textarea id="roulette-items-input" rows="6"
-          placeholder="Guerreiro&#10;Mago&#10;Ladino&#10;Clérigo"></textarea>
-        <button id="btn-save-roulette-items" class="btn-secondary">💾 Salvar Opções</button>
+          placeholder="Guerreiro&#10;Mago&#10;Ladino"></textarea>
+        <button id="btn-save-roulette-items" class="btn-secondary">💾 Salvar</button>
       </div>
-
       <div class="history-section">
         <h4>📜 Histórico</h4>
         <ul id="roulette-history"></ul>
         <button id="btn-clear-roulette-history" class="btn-small">🗑️ Limpar</button>
       </div>
-
     </section>
 
-    <!-- ABA: CAÇA-NÍQUEL -->
     <section id="tab-slots" class="tab-content hidden">
-
       <div id="slots-machine">
         <div class="slot-reel" id="reel-0"><div class="slot-symbol">🍒</div></div>
         <div class="slot-reel" id="reel-1"><div class="slot-symbol">🍒</div></div>
         <div class="slot-reel" id="reel-2"><div class="slot-symbol">🍒</div></div>
       </div>
-
       <div id="slots-result" class="result-box">Puxe a alavanca!</div>
-
-      <button id="btn-pull-slots" class="btn-primary">🎰 Puxar Alavanca</button>
-
+      <button id="btn-pull-slots" class="btn-primary">🎰 Puxar</button>
       <div id="slots-gm-panel" class="gm-panel hidden">
-        <h3>⚙️ Configurações do GM</h3>
-        <label for="slots-win-chance">
-          Chance de vitória: <strong><span id="slots-win-chance-label">30</span>%</strong>
-        </label>
+        <h3>⚙️ GM — Chance de Vitória</h3>
+        <label>Chance: <strong><span id="slots-win-chance-label">30</span>%</strong></label>
         <input type="range" id="slots-win-chance" min="0" max="100" value="30" />
         <button id="btn-save-slots-config" class="btn-secondary">💾 Salvar</button>
-        <p class="gm-note">⚠️ Jogadores não veem esta configuração.</p>
+        <p class="gm-note">⚠️ Jogadores não veem isso.</p>
       </div>
-
       <div class="history-section">
         <h4>📜 Histórico</h4>
         <ul id="slots-history"></ul>
         <button id="btn-clear-slots-history" class="btn-small">🗑️ Limpar</button>
       </div>
-
     </section>
 
-    <!-- ABA: CARA OU COROA -->
     <section id="tab-coinflip" class="tab-content hidden">
-
       <div id="coin-container">
         <div id="coin">
           <div id="coin-front" class="coin-face">👑</div>
           <div id="coin-back" class="coin-face">🌿</div>
         </div>
       </div>
-
       <div id="coinflip-result" class="result-box">Jogue a moeda!</div>
-
-      <button id="btn-flip-coin" class="btn-primary">🪙 Jogar Moeda</button>
-
+      <button id="btn-flip-coin" class="btn-primary">🪙 Jogar</button>
       <div class="history-section">
         <h4>📜 Histórico</h4>
         <ul id="coinflip-history"></ul>
         <button id="btn-clear-coinflip-history" class="btn-small">🗑️ Limpar</button>
       </div>
-
     </section>
 
   </div>
 
   <script src="owlbear-rodeo-sdk.umd.js"></script>
-=======
-  <!-- SDK do Owlbear Rodeo via CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/@owlbear-rodeo/sdk@latest/dist/owlbear-rodeo-sdk.umd.js"></script>
->>>>>>> 706ab4b9da9f00fa44741c66cffb555c8667cc7c
-
-  <!-- Scripts da extensão -->
   <script src="utils.js"></script>
   <script src="audio.js"></script>
   <script src="sync.js"></script>
