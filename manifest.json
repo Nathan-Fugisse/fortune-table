@@ -9,7 +9,7 @@
     "title": "Fortune Table",
     "icon": "/icons/icon.svg",
     "popover": "/index.html",
-    "width": 500,
-    "height": 800
+    "width": 600,
+    "height": 500
   }
 }
