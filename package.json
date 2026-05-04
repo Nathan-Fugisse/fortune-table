@@ -5,7 +5,13 @@
   "scripts": {
     "dev": "npx http-server . -p 3000 --cors -c-1"
   },
-  "keywords": ["owlbear-rodeo", "extension"],
+  "keywords": [
+    "owlbear-rodeo",
+    "extension"
+  ],
   "author": "Seu Nome",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@owlbear-rodeo/sdk": "^3.1.0"
+  }
 }
