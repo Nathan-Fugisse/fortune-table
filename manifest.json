@@ -1,0 +1,16 @@
+{
+  "name": "Fortune Table",
+  "version": "1.0.0",
+  "description": "Mesa da Fortuna com Roleta, Caça-níquel e Cara ou Coroa para suas sessões de RPG.",
+  "author": "Seu Nome",
+  "icon": "https://Nathan-Fugisse.github.io/fortune-table/icons/icon.svg",
+  "action": {
+    "title": "Fortune Table",
+    "icon": "https://Nathan-Fugisse.github.io/fortune-table/icons/icon.svg",
+    "popover": {
+      "url": "https://Nathan-Fugisse.github.io/fortune-table/index.html",
+      "height": 620,
+      "width": 400
+    }
+  }
+}
